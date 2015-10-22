@@ -1,0 +1,89 @@
+\begin{enumerate}[leftmargin=2cm,labelsep=.5cm,label=\bf\arabic*.]
+\item $p: \textbf{F}, \qquad q: \textbf{T}$ 
+\begin{enumerate}
+  \item \textbf{T}
+  \item \textbf{F}
+  \item \textbf{T}
+  \item \textbf{F}
+  \item \textbf{F}
+  \item \textbf{F}
+  \item \textbf{T}
+  \item \textbf{T}
+  \item \textbf{T}
+  \item \textbf{F}\\[5mm]
+\end{enumerate}
+
+\item
+\textit{Statement 1:}
+\begin{tabu}[t]{|c|c|c|c|c|c|}
+		\hline
+		$p$ & $q$ & $r$ & $p\rightarrow q$ & $q\rightarrow r$ & $(p\rightarrow q) \wedge (q\rightarrow r)$ \\ \hline
+		\textbf{T} & \textbf{T} & \textbf{T} & \textbf{T} & \textbf{T} & \textbf{T} \\ \hline
+		\textbf{T} & \textbf{T} & \textbf{F} & \textbf{T} & \textbf{F} & \textbf{F} \\ \hline
+		\textbf{T} & \textbf{F} & \textbf{T} & \textbf{F} & \textbf{T} & \textbf{F} \\ \hline
+		\textbf{T} & \textbf{F} & \textbf{F} & \textbf{F} & \textbf{T} & \textbf{F} \\ \hline
+		\textbf{F} & \textbf{T} & \textbf{T} & \textbf{T} & \textbf{T} & \textbf{T} \\ \hline
+		\textbf{F} & \textbf{T} & \textbf{F} & \textbf{T} & \textbf{F} & \textbf{F} \\ \hline
+		\textbf{F} & \textbf{F} & \textbf{T} & \textbf{T} & \textbf{T} & \textbf{T} \\ \hline
+		\textbf{F} & \textbf{F} & \textbf{F} & \textbf{T} & \textbf{T} & \textbf{T} \\ \hline
+\end{tabu}
+
+\textit{Statement 2:}
+\begin{tabu}[t]{|c|c|c|}
+\hline
+$p$ & $r$ & $p\rightarrow r$ \\ \hline
+\textbf{T} & \textbf{T} & \textbf{T} \\ \hline
+\textbf{T} & \textbf{F} & \textbf{F} \\ \hline
+\textbf{F} & \textbf{T} & \textbf{T} \\ \hline
+\textbf{F} & \textbf{F} & \textbf{T} \\ \hline
+\end{tabu}\\[5mm]
+The statements are logically equivalent.\newpage
+
+\item
+\begin{enumerate}
+  \item \textbf{Neither:}\\ \begin{tabu}[t]{|c|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $\neg q$ & $p\vee\neg q$ & $\neg(p\vee\neg q)$ & $\neg(p\vee\neg q)\vee p$ \\ \hline
+\textbf{T} & \textbf{T} & \textbf{F} & \textbf{T} & \textbf{F} & \textbf{T} \\ \hline
+\textbf{T} & \textbf{F} & \textbf{T} & \textbf{T} & \textbf{F} & \textbf{T} \\ \hline
+\textbf{F} & \textbf{T} & \textbf{F} & \textbf{F} & \textbf{T} & \textbf{T} \\ \hline
+\textbf{F} & \textbf{F} & \textbf{T} & \textbf{T} & \textbf{F} & \textbf{F} \\ \hline
+\end{tabu}\\[2mm]
+
+  \item \textbf{Neither:}\\
+  \begin{tabu}[t]{|c|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $\neg q$ & $p\wedge q$ & $p\rightarrow (p\wedge q)$ & $[p\rightarrow (p\wedge q)]\rightarrow \neg q$ \\ \hline
+\textbf{T} & \textbf{T} & \textbf{F} & \textbf{T} & \textbf{T} & \textbf{F} \\ \hline
+\textbf{T} & \textbf{F} & \textbf{T} & \textbf{F} & \textbf{F} & \textbf{T} \\ \hline
+\textbf{F} & \textbf{T} & \textbf{F} & \textbf{F} & \textbf{T} & \textbf{F} \\ \hline
+\textbf{F} & \textbf{F} & \textbf{T} & \textbf{F} & \textbf{T} & \textbf{T} \\ \hline
+\end{tabu}\\[2mm]
+
+  \item \textbf{Contradiction:}\\
+  \begin{tabu}[t]{|c|c|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $\neg q$ & $\neg p$ & $p\wedge q$ & $\neg p\vee\neg q$ & $(p\wedge q)\leftrightarrow (\neg p\vee\neg q)$ \\ \hline
+\textbf{T} & \textbf{T} & \textbf{F} & \textbf{F} & \textbf{T} & \textbf{F} & \textbf{F} \\ \hline
+\textbf{T} & \textbf{F} & \textbf{T} & \textbf{F} & \textbf{F} & \textbf{T} & \textbf{F} \\ \hline
+\textbf{F} & \textbf{T} & \textbf{F} & \textbf{T} & \textbf{F} & \textbf{T} & \textbf{F} \\ \hline
+\textbf{F} & \textbf{F} & \textbf{T} & \textbf{T} & \textbf{F} & \textbf{T} & \textbf{F} \\ \hline
+\end{tabu}\\[5mm]
+\end{enumerate}
+
+\item 
+\begin{enumerate}
+  \item Converse: ``If you are healthy, then you run ten laps daily.''
+  \item Inverse: ``If you do not run ten laps daily, then you will not be healthy.''
+  \item Contrapositive: ``If you are not healthy, then you do not run ten laps daily.''
+  \item Negation: ``It is not the case that if you run ten laps daily, then you will be healthy.''\\[5mm]
+\end{enumerate}
+
+\item
+  	\begin{enumerate}
+  \item $p$
+  \item $p$
+  \item $p$
+\end{enumerate}
+ 
+\end{enumerate}

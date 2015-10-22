@@ -1,0 +1,119 @@
+\begin{enumerate}[leftmargin=2cm,labelsep=.5cm,label=\bf\arabic*.]
+\item 
+\begin{tabu}[t]{l|p{.8\linewidth}}
+  \textbf{Input:} & None.\\
+  \textbf{Output:} & None.\\
+  \textbf{Precision:} & Imprecise; the first two steps could be greatly expanded.\\
+  \textbf{Determinism:} & Deterministic; the only result of the sequence is to halt when it matches an elephant.\\
+  \textbf{Finiteness:} & Infinite; the sequence will not halt if there are no elephants in Africa.\\
+  \textbf{Correctness:} & Correct; the sequence only halts when `animal' equals `elephant'.\\
+  \textbf{Generality:} & Non-general; there is no input.\\
+\end{tabu}\\[1cm]
+\item
+\begin{tabu}[t]{l|p{.8\linewidth}}
+  \textbf{Input:} & `a', `b', and `c'.\\
+  \textbf{Output:} & `large'.\\
+  \textbf{Precision:} & Precise; the algorithm cannot be further expanded.\\
+  \textbf{Determinism:} & Deterministic; the output is irrespective of input order, and will return the same output for a set of inputs, regardless of how many times the algorithm is run with that particular set.\\
+  \textbf{Finiteness:} & Finite; the algorithm will always halt.\\
+  \textbf{Correctness:} & Correct; the algorithm will always return the largest of the inputs.\\
+  \textbf{Generality:} & General; applies to a set of inputs.\\
+\end{tabu}\\[1cm]
+\item
+\begin{enumerate}[label=\arabic*.]
+  \item Input $a$, $b$, $c$, $d$
+  \item $max\leftarrow a$
+  \item If $b > max$ then
+  \begin{enumerate}[leftmargin=1cm,label*=\arabic*]
+      \item $max\leftarrow b$
+  \end{enumerate}
+  \item If $c > max$ then
+  \begin{enumerate}[leftmargin=1cm,label*=\arabic*]
+      \item $max\leftarrow c$
+  \end{enumerate}
+  \item If $d > max$ then
+  \begin{enumerate}[leftmargin=1cm,label*=\arabic*]
+      \item $max\leftarrow d$
+  \end{enumerate}
+  \item Output $max$\\[1cm]
+\end{enumerate}
+\item
+\begin{enumerate}[label=\arabic*.]
+  \item Input $h$, $m$, $s$
+  \item $total\leftarrow 3600h + 60m + s$ 
+  \item Output $total$\\[1cm]
+\end{enumerate}
+\newpage
+\item 
+\begin{enumerate}
+  \item
+  \begin{enumerate}[label=\arabic*.]
+    \item Input $n$
+    \item $sum\leftarrow 0$
+    \item For $i = 1$ to $n$ do
+    \begin{enumerate}[leftmargin=1cm,label*=\arabic*]
+      \item $sum\leftarrow sum + i^3$
+    \end{enumerate}
+    \item Output $sum$\\[5mm]
+  \end{enumerate}
+  \item
+  \begin{enumerate}[label=\arabic*.]
+    \item Input $n$
+    \item $sum\leftarrow 0$; $i\leftarrow 1$
+    \item While $i \leq n$ do
+    \begin{enumerate}[leftmargin=1cm,label*=\arabic*]
+      \item $sum\leftarrow sum + i^3$
+      \item $i\leftarrow i+1$
+    \end{enumerate}
+    \item Output $sum$\\[5mm]
+  \end{enumerate}
+  \item
+  \begin{enumerate}[label=\arabic*.]
+    \item Input $n$
+    \item $sum\leftarrow 0$; $i\leftarrow 1$
+    \item Repeat
+    \begin{enumerate}[leftmargin=1cm,label*=\arabic*]
+      \item $sum\leftarrow sum + i^3$
+      \item $i\leftarrow i+1$
+    \end{enumerate}
+    until $i < n$
+    \item Output $sum$\\[1cm]
+  \end{enumerate}
+\end{enumerate}
+\item
+\begin{enumerate}
+\item $i=2$\\
+  \item $i=0$\\
+  \item The sequence enters an infinite loop because $n$ will always be even.\\
+  \item No. An algorithm is finite.\\[1cm]
+\end{enumerate}
+\newpage
+\item
+\begin{enumerate}
+  \item
+  \begin{tabu}[t]{|r|c|c|c|}
+    \hline
+    \multicolumn{1}{|c|}{Step} & $n$ & $answer$ & Output\\ \hline
+    2 & 4 & 4 & --- \\ \hline
+    3 & 4 & 4 & --- \\ \hline
+    3.1 & 3 & 4 & --- \\ \hline
+    3.2 & 3 & 12 & --- \\ \hline
+    3.1 & 2 & 12 & --- \\ \hline
+    3.2 & 2 & 24 & --- \\ \hline
+    3.1 & 1 & 24 & --- \\ \hline
+    3.2 & 1 & 24 & --- \\ \hline
+    4 & 1 & 24 & 24 \\ \hline
+  \end{tabu}\\[5mm]
+  
+  \item Yes. The sequence is an algorithm because it is finite.\\[1cm]
+\end{enumerate}
+\item
+\begin{enumerate}
+\item 3, 6, 2\\
+        2, 6, 3\\
+
+  \item 3, 5, 8, 4\\
+
+  \item The largest number will not always be at the end of the list, due to a typographical error in the code. In the loop, it performs the comparison $x_1 > x_{i+1}$, which compares the first number to $x_{i+1}$, and leads to an incorrect output. The correct comparison is $x_i > x_{i+1}$. \\[1cm]
+\end{enumerate}
+\end{enumerate}
