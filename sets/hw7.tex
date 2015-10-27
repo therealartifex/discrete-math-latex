@@ -1,11 +1,30 @@
 \begin{enumerate}[leftmargin=2cm,labelsep=.5cm,label=\bf\arabic*.]
 \item
 
+\item
+\begin{lemma}
+$sqrt{3}$ is an irrational number.
+\end{lemma}
+\begin{proof}
+Assume that $sqrt{3}$ is a rational number.\\
+If $n^2 \bmod k = 0$, then $n \bmod k = 0$.\\
+A rational number can be expressed as the quotient $\frac{p}{q}$ of two integers, where $q\neq 0$.\\[2mm]
+$\sqrt{3}=\frac{p}{q}$, where p and q are coprime integers.\\
+$3q^2 = p^2$.\\
+$p^2$ is divisible by $3$, so $p$ is also divisible by $3$.\\
+Let $p=3n$ for some integer n.\\
+Then $p \bmod 3 = 0$.\\
+$3q^2 = (3n)^2$\\
+$3q^2 = 9n^2$\\
+$q^2 = 3n^2$.\\
+If $3n^2 \bmod 3 = 0$, then $q^2 \bmod 3 = 0$.\\[2mm]
+Now $q^2$ is divisible by $3$, so $q$ must also be divisible by $3$.\\
+If both $p$ and $q$ are divisible by $3$, then they are not coprime.\\
+Therefore, $sqrt{3}$ must be an irrational number.\\[5mm]
+\end{proof}
 
 \item
-
-\item
-\begin{lemma}[t]
+\begin{lemma}
 A triangle cannot have more than one obtuse angle.
 \end{lemma}
 \begin{proof}
@@ -16,14 +35,14 @@ Let $a$, $b$, $c$ be the angles of a triangle.\\
 Then $a + b + c = 180$.\\
 Let $a > 90$, and $b > 90$.\\[2mm]
 Then $a + b > 180$, which dissatisfies the definition of a triangle.\\
-Therefore, a triangle cannot have more than one obtuse angle.
+Therefore, a triangle cannot have more than one obtuse angle.\\[5mm]
 \end{proof}
 
 \item
 \begin{enumerate}
   \item $\big\{\varnothing,\left\{0\right\},\left\{4\right\},\left\{0,4\right\} \big\}$
   \item $4$
-  \item $\left\{0,3,5 \right\}$
+  \item $\left\{4,1,2 \right\}$
   \item $\left\{0,3,4,5 \right\}$
   \item $\left\{0,1,4 \right\}$
   \item $\left\{4 \right\}$
